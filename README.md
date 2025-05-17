@@ -25,7 +25,7 @@ The system uses your webcam to detect faces and apply a **color-coded bounding b
 ## 📁 Project Structure
 
 ```text
-FER_Engagement/
+FER_Model_CNN_Project/
 │
 ├── Emotion_program.ipynb                  # Real-time detection via webcam
 ├── Models_Evaluation_Finished_CNN.ipynb   # Builds and saves the CNN model
@@ -41,8 +41,8 @@ FER_Engagement/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/FER_Engagement.git
-cd FER_Engagemen
+git clone https://github.com/yourusername/FER_Model_CNN_Project.git
+cd FER_Model_CNN_Project
 ```
 
 ### 2. Install Dependencies
