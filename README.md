@@ -13,7 +13,7 @@ Using your webcam, the system draws a bounding box around detected faces, with *
 
 ---
 
-## 📸 Demo  
+## 📸 Example of Working Model  
 
 ![FER Demo](images/test.gif)
 
