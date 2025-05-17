@@ -1,6 +1,6 @@
 # 🎓 Student Engagement FER System  
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)  
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)  
 ![Platform](https://img.shields.io/badge/platform-Jupyter%20Notebook-%23121011.svg?style=flat&logo=Jupyter)  
 ![Status](https://img.shields.io/badge/status-Active-brightgreen)
