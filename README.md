@@ -1,6 +1,3 @@
-Absolutely! Here's your README in full **Markdown** format, ready to copy and paste into a `README.md` file:
-
-
 # 🎓 Student Engagement FER System  
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)  
