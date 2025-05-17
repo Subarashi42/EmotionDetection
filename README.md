@@ -15,7 +15,7 @@ Using your webcam, the system draws a bounding box around detected faces, with *
 
 ## 📸 Demo  
 
-![FER Demo](images/demo.gif) <!-- Replace with your own gif or image -->
+![FER Demo](images/test.gif)
 
 ---
 
@@ -100,7 +100,7 @@ After running the program, you'll see a visual breakdown of the emotions detecte
 
 Example Output:
 
-![Emotion Summary](images/emotion_summary.png) <!-- Replace with your own image -->
+![Emotion Summary](images/emotion_session_chart_2025-04-27_14-03-43.png) 
 
 ---
 
