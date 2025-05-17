@@ -24,12 +24,12 @@ Using your webcam, the system draws a bounding box around detected faces, with *
 
 
 FER_Engagement
-│
-├── Emotion_program.ipynb                  # Run this to activate webcam & track emotions
-├── Models_Evaluation_Finished_CNN.ipynb   # Run this to train/load the model
-├── utils/                                 # Helper functions and preprocessing scripts
-├── images/                                # Demo screenshots or gif
-└── README.md                              # You're reading it!
+│  
+├── Emotion_program.ipynb                  # Run this to activate webcam & track emotions  
+├── Models_Evaluation_Finished_CNN.ipynb   # Run this to train/load the model  
+├── utils/                                 # Helper functions and preprocessing scripts  
+├── images/                                # Demo screenshots or gif  
+└── README.md                              # You're reading it!  
 
 
 
