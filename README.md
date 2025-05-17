@@ -1,19 +1,22 @@
-# 🎓 Student Engagement FER System  
 
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)  
-![Platform](https://img.shields.io/badge/platform-Jupyter%20Notebook-%23121011.svg?style=flat&logo=Jupyter)  
-![Status](https://img.shields.io/badge/status-Active-brightgreen)
+# 🎓 Student Engagement FER System
 
-A real-time **Facial Emotion Recognition (FER)** system designed to assess student engagement during virtual or in-person learning sessions. The model classifies emotions into:
+<p align="center">
+  <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" />
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" />
+  <img src="https://img.shields.io/badge/platform-Jupyter%20Notebook-%23121011.svg?style=flat&logo=Jupyter" />
+  <img src="https://img.shields.io/badge/status-Active-brightgreen" />
+</p>
+
+A real-time **Facial Emotion Recognition (FER)** system that detects and analyzes student emotions during learning sessions. The model classifies facial expressions into:
 
 > **Engaged, Disengaged, Surprise, Neutral, and Frustration**
 
-Using your webcam, the system draws a bounding box around detected faces, with **color-coded emotion feedback**. At the end of a session, it generates a summary of emotional trends over time.
+The system uses your webcam to detect faces and apply a **color-coded bounding box** that reflects the detected emotion. At the end of a session, it generates a **summary of emotional trends** over the duration.
 
 ---
 
-## 📸 Example of Working Model  
+## 📸 Example of Working Model
 
 ![FER Demo](images/test.gif)
 
@@ -21,17 +24,15 @@ Using your webcam, the system draws a bounding box around detected faces, with *
 
 ## 📁 Project Structure
 
-
-
-FER_Engagement
-│  
-├── Emotion_program.ipynb                  # Run this to activate webcam & track emotions  
-├── Models_Evaluation_Finished_CNN.ipynb   # Run this to train/load the model  
-├── utils/                                 # Helper functions and preprocessing scripts  
-├── images/                                # Demo screenshots or gif  
-└── README.md                              # You're reading it!  
-
-
+```text
+FER_Engagement/
+│
+├── Emotion_program.ipynb                  # Real-time detection via webcam
+├── Models_Evaluation_Finished_CNN.ipynb   # Builds and saves the CNN model
+├── images.ipynb                           # Gives a visualization of the models graphical analysis
+├── images/                                # Demo GIFs, session summaries, etc.
+└── README.md                              # Project documentation
+```
 
 ---
 
@@ -41,12 +42,12 @@ FER_Engagement
 
 ```bash
 git clone https://github.com/yourusername/FER_Engagement.git
-cd FER_Engagement
+cd FER_Engagemen
 ```
 
 ### 2. Install Dependencies
 
-Make sure you have Python 3.8+ and install the required packages:
+Ensure you’re using **Python 3.8+** and install the requirements:
 
 ```bash
 pip install -r requirements.txt
@@ -54,75 +55,80 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Model Generation
+## 🧠 Build the FER Model
 
-Since the model file is too large to store in this repository, **you'll need to generate it manually**:
+> ⚠️ The trained model file is not included in this repository due to size constraints.
 
-👉 **Run this notebook to train and save the FER model:**
+To build the model manually:
+
+**Run this notebook:**
 
 ```bash
 Models_Evaluation_Finished_CNN.ipynb
 ```
 
-This will produce a trained CNN model file (e.g., `emotion_model.h5`) and save it for use in the real-time detection program.
+This will:
+- Train the CNN-based emotion recognition model
+- Save it as a `.h5` file (e.g., `emotion_model.h5`)
 
 ---
 
-## 🎥 Real-Time Emotion Detection
+## 🎥 Run Real-Time Emotion Detection
 
-To launch the real-time facial emotion recognition system:
+To start detecting emotions via your webcam:
 
-👉 **Run this notebook:**
+**Run this notebook:**
 
 ```bash
 Emotion_program.ipynb
 ```
 
-This notebook will:
+Features:
+- Activates your **webcam**
+- Detects faces and classifies emotions in **real time**
+- Draws a bounding box around detected faces with a color representing the emotion:
 
-* Activate your **webcam**
-* Detect faces and classify emotions in **real time**
-* Draw a **bounding box** around the face with color representing the emotion:
+| Emotion       | Box Color |
+| ------------- | ---------- |
+| **Engaged**   | 🟩 Green   |
+| **Disengaged**| 🟦 Blue    |
+| **Surprise**  | 🟨 Yellow  |
+| **Neutral**   | ⬜ White   |
+| **Frustration**| 🟥 Red    |
 
-  * 🟩 **Engaged**
-  * 🟦 **Disengaged**
-  * 🟨 **Surprise**
-  * ⬜ **Neutral**
-  * 🟥 **Frustration**
-
-When the session ends (or you manually stop it), a summary report will display the **emotional distribution** tracked during the session.
+When the session ends (or is manually stopped), the notebook displays a summary of emotions detected during the session.
 
 ---
 
 ## 📊 Emotion Summary Report
 
-After running the program, you'll see a visual breakdown of the emotions detected over time.
+At the end of each session, the system generates a visual report of emotional distribution over time.
 
-Example Output:
+**Example Output:**
 
-![Emotion Summary](images/emotion_session_chart_2025-04-27_14-03-43.png) 
+![Emotion Summary](images/emotion_session_chart_2025-04-27_14-03-43.png)
 
 ---
 
 ## ✅ Emotion Labels
 
-| Label           | Description                           |
-| --------------- | ------------------------------------- |
-| **Engaged**     | Student appears focused and attentive |
-| **Disengaged**  | Low attention, distracted             |
-| **Surprise**    | Sudden emotional response             |
-| **Neutral**     | Passive or blank expression           |
-| **Frustration** | Confused or struggling expressions    |
+| Emotion        | Description                            |
+|----------------|----------------------------------------|
+| **Engaged**     | Focused, attentive                     |
+| **Disengaged**  | Low attention, distracted              |
+| **Surprise**    | Sudden reaction, unexpected event      |
+| **Neutral**     | Passive, non-expressive                |
+| **Frustration** | Confused or struggling to understand   |
 
 ---
 
 ## 🔒 License
 
-This project is licensed under the [GPLv3 License](LICENSE).
+This project is licensed under the terms of the [GNU General Public License v3.0](LICENSE).
 
 ---
 
 ## 🙌 Acknowledgements
 
-* Built using [OpenCV](https://opencv.org/), [TensorFlow](https://www.tensorflow.org/), and [Keras](https://keras.io/)
-* Inspired by research in **educational psychology** and **affective computing**
+- Built with ❤️ using [OpenCV](https://opencv.org/), [TensorFlow](https://www.tensorflow.org/), and [Keras](https://keras.io/)
+- Inspired by academic research in **affective computing** and **educational psychology**
