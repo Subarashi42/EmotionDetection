@@ -1,0 +1,30 @@
+{
+  "emotion_map": {
+    "0": "Engaged",
+    "1": "Frustrated",
+    "2": "Disengaged",
+    "3": "Surprise",
+    "4": "Neutral"
+  },
+  "preprocessing_info": {
+    "image_size": [
+      48,
+      48
+    ],
+    "normalization": "divide_by_255",
+    "color_mode": "grayscale"
+  },
+  "training_stats": {
+    "final_val_accuracy": 0.5637533664703369,
+    "final_val_loss": 1.2304452657699585,
+    "training_time": 121.99380469322205,
+    "batch_size": 64,
+    "enhanced_class_weights": {
+      "0": 0.7983310152990264,
+      "1": 1.5679490097882995,
+      "2": 0.768921634293369,
+      "3": 1.79262960649594,
+      "4": 1.389550131127698
+    }
+  }
+}
