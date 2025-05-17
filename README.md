@@ -18,7 +18,7 @@ The system uses your webcam to detect faces and apply a **color-coded bounding b
 
 ## 📸 Example of Working Model
 
-![FER Test](images/tes.gif)
+![FER Test](images/test.gif)
 
 ---
 
