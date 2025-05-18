@@ -29,9 +29,11 @@ FER_Model_CNN_Project/
 │
 ├── Emotion_program.ipynb                  # Real-time detection via webcam
 ├── Models_Evaluation_Finished_CNN.ipynb   # Builds and saves the CNN model
+├── fer2013_data.zip                       # The data the model is being trained on
 ├── images.ipynb                           # Gives a visualization of the models graphical analysis
 ├── deploy.prototxt                        # Facial Recognition software(Model Architeciture)
 ├── res10_300x300.caffemodel               # Facial Recognition software (trained weights)
+├── emotion_recognition_metadata           # Stores metadata for the Emotion_program.ipynb
 ├── images/                                # Demo GIFs, session summaries, etc.
 └── README.md                              # Project documentation
 ```
