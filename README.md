@@ -136,3 +136,4 @@ This project is licensed under the terms of the [GNU General Public License v3.0
 
 - Built with ❤️ using [OpenCV](https://opencv.org/), [TensorFlow](https://www.tensorflow.org/), and [Keras](https://keras.io/)
 - Inspired by academic research in **affective computing** and **educational psychology**
+- Thank you for reading!
